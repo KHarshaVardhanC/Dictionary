@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
+
+
+h1 {
+  font-size: 50px;
+  font-family: 'Courier New', Courier, monospace;
+  color: rgba(120, 27, 27, 0.896);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+form-group ul{
+  font-size: 20px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.suggestion-items{
+  /* max-width:  200px; */
+  padding: auto;
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  list-style-type: none;
+
 }
 
-.App-link {
-  color: #61dafb;
+.suggestion-item {
+  padding: 8px;
+  cursor: pointer;
+  border: 2px solid #5c14af;
+  width: 250px;
+  /* background-color: rgb(red, green, blue); */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.suggestion-item:hover {
+  background-color: #f0f0f0;
+}
+.buttons {
+  display: flex;
+  flex-direction: column; 
+  gap: 15px; 
+  align-items: flex-start; 
+}
+
+button {
+  width: 300px;
+  height: 60px;
+
+  padding: auto;
+  margin: auto;
+  
+  border-radius: 5px;
+  border: 5px solid rgb(41, 41, 133);
+  font-size: large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(222, 78, 17);
+  background-color: rgb(144, 245, 144);
+}
+
+button:hover {
+  color: black;
+  background: linear-gradient(90deg, rgba(5, 30, 198, 0.036) 0%, rgb(8, 201, 59) 35%, rgb(225, 108, 13) 100%);
+  cursor: pointer;
 }
